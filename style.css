@@ -21,6 +21,7 @@ body {
 .text-arabic{
   font-family: 'me_quranR3HOQ';
   font-size:40px;
+  line-height: 60px;
 }
 
 /* CSS method */

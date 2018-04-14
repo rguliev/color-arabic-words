@@ -9,14 +9,15 @@
 </head>
 
 <body>
-  <table>
+  <table class='bordered'>
     <thead>
-      <th>Method</th>
-      <th>Example</td>
-        <th>Pros</th>
-        <th>Cons</th>
-        <th>Comments</th>
+      <th class="w20">Method</th>
+      <th class="w30">Example</td>
+      <th class="w20">Pros</th>
+      <th class="w20">Cons</th>
+      <th class="w20">Comments</th>
     </thead>
+    <tbody>
     <tr>
       <td>Reference</td>
       <td class='text-arabic'>
@@ -38,7 +39,7 @@
             <span class='middle'>ﻢ</span>
             <span class='bottom'>&#1562;</span>
           </div>
-          <div class='ar-letter rule maddarid-lis-sukun'>
+          <div class='ar-letter rule tj maddarid-lis-sukun'>
             <span class='top'></span>
             <span class='middle'>ﻴ</span>
             <span class='bottom'></span>
@@ -48,12 +49,12 @@
             <span class='middle'>ﺣ</span>
             <span class='bottom'>&#1562;</span>
           </div>
-          <div class='ar-letter rule rule tafhym'>
+          <div class='ar-letter rule tj tafhym'>
             <span class='top'>&#64608;</span>
             <span class='middle'>ﺮ</span>
             <span class='bottom'></span>
           </div>
-          <div class='ar-letter rule rule lam-shamsiya'>
+          <div class='ar-letter rule tj lam-shamsiya'>
             <span class='top'></span>
             <span class='middle'>ﻟ</span>
             <span class='bottom'></span>
@@ -72,7 +73,7 @@
             <span class='bottom'>&#1562;</span>
           </div>
           <div class='ar-letter'>
-            <span class='top rule alef-khanjariya'>&#1648;</span>
+            <span class='top rule tj alef-khanjariya'>&#1648;</span>
             <span class='middle'>ﻤ</span>
             <span class='bottom'></span>
           </div>
@@ -81,35 +82,12 @@
             <span class='middle'>ﺣ</span>
             <span class='bottom'></span>
           </div>
-          <div class='ar-letter rule tafhym'>
+          <div class='ar-letter rule tj tafhym'>
             <span class='top'>&#64608;</span>
             <span class='middle'>ﺮ</span>
             <span class='bottom'></span>
           </div>
-          <div class='ar-letter rule lam-shamsiya'>
-            <span class='top'></span>
-            <span class='middle'>ﻟ</span>
-            <span class='bottom'></span>
-          </div>
-          <div class='ar-letter'>
-            <span class='top'>&#1552;</span>
-            <span class='middle'>ا</span>
-            <span class='bottom'></span>
-          </div>
-        </div>
-        &nbsp;
-        <div class='ar-word'>
-          <div class='ar-letter'>
-            <span class='top'></span>
-            <span class='middle'>ﻪ</span>
-            <span class='bottom'>&#1562;</span>
-          </div>
-          <div class='ar-letter'>
-            <span class='top'>&#64608;</span>
-            <span class='middle'>ﻠ</span>
-            <span class='bottom'></span>
-          </div>
-          <div class='ar-letter'>
+          <div class='ar-letter rule tj lam-shamsiya'>
             <span class='top'></span>
             <span class='middle'>ﻟ</span>
             <span class='bottom'></span>
@@ -145,7 +123,6 @@
           <li>Easy custom styling: change bg on hover, etc.</li>
         </ul>
       </td>
-      <td></td>
       <td>
         <ul>
           <li>Difficult control of positions. For example, letters have different sizes, i.e. fatha above alef should be higher
@@ -155,11 +132,12 @@
           <li>Copy-paste and printing.</li>
         </ul>
       </td>
+      <td></td>
     </tr>
     <tr>
       <td>Using SVG (each symbol in text)</td>
       <td class='text-arabic'>
-        <svg height="100px" width="100px" viewBox="0 0 80 60" style="border:solid 1px;" font-size=35 id='svg' xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 80 60" style="border:solid 1px;" id='svg' xmlns="http://www.w3.org/2000/svg">
           <text x="57" y="40">ﺑ
             <tspan x="57" y="42">&#65146;</tspan>
           </text>
@@ -188,7 +166,7 @@
     <tr>
       <td>Using SVG (overlapping)</td>
       <td class='text-arabic'>
-        <svg height="50" width="80" style="font-size:40px;border:solid 1px;" id='svg' xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox='0 0 80 50' style="font-size:40px;border:solid 1px;" id='svg' xmlns="http://www.w3.org/2000/svg">
           <text x="0" y="30">بِسْمِ</text>
           <text x="21" y="33" class="rule tj for-test">&#1618;</text>
           <text x="0" y="30" class="rule tj for-test">مِ</text>
@@ -210,7 +188,7 @@
     <tr>
       <td>Using SVG (by one word - one text)</td>
       <td class='text-arabic'>
-        <svg height="100" width="100" viewBox='0 0 80 50' style="font-size:40px;border:solid 1px;" id='svg' xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox='0 0 80 50' style="font-size:40px;border:solid 1px;" id='svg' xmlns="http://www.w3.org/2000/svg">
           <text x="30" y="30">
             <tspan>ﺑ</tspan>
             <tspan class='rule tj for-test'>&#1562;</tspan>
@@ -237,12 +215,7 @@
     <tr>
       <td>Using ZWJ (zero width joiner symbol)</td>
       <td class='text-arabic'>
-        <p style='font-size:40px;'>&#1576;&#1616;&#1587;&#1618;&#1605;&#1616;&nbsp;&#1575;
-          <span class="rule tj lam-shamsiya">&#1604&zwj;</span>
-          <span class="rule tj tafhym">&#1585;&#1617;&#1614;&zwj;</span>&#1581;&#1618;&#1605;&#1614;&#1606;&#1616;&nbsp;&#1575;
-          <span class="rule tj lam-shamsiya">&#1604&zwj;</span>
-          <span class="rule tj tafhym">&#1585;&#1617;&#1614</span>&#1581;&zwj;
-          <span class='rule tj alef-khanjariya'>&zwj;&#1616;&#1610;&zwj;</span>&#1605;&#1616;</p>
+        <p style='font-size:40px;'>&#1576;&#1616;&#1587;&#1618;&#1605;&#1616;&nbsp;&#1575;<span class="rule tj lam-shamsiya">&#1604&zwj;</span><span class="rule tj tafhym">&#1585;&#1617;&#1614;&zwj;</span>&#1581;&#1618;&#1605;&#1614;&#1606;&#1616;&nbsp;&#1575;<span class="rule tj lam-shamsiya">&#1604&zwj;</span><span class="rule tj tafhym">&#1585;&#1617;&#1614</span>&#1581;&zwj;<span class='rule tj alef-khanjariya'>&zwj;&#1616;&#1610;&zwj;</span>&zwj;&#1605;&#1616;</p>
       </td>
       <td>
         <ul>
@@ -257,6 +230,7 @@
       </td>
       <td>Method suggested <a href="https://stackoverflow.com/questions/11155849/partially-colored-arabic-word-in-html" target="_blank">here</a></td>
     </tr>
+    </tbody>
   </table>
   <hr/>
   <button id='tjbtn'>Toggle Tajweed coloring</button>
