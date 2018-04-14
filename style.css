@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'test';
+  src:
+    local('test'), 
+    url(fonts/test.ttf) format('truetype');
+  ;
+}
+
+@font-face {
+  font-family: 'me_quranR3HOQ';
+  src:
+    local('me_quranR3HOQ'), 
+    url(fonts/me_quranR3HOQ.ttf) format('truetype');
+  ;
+}
+
+body {
+  margin-top:30px;
+}
+
+.text-arabic{
+  font-family: 'me_quranR3HOQ';
+  font-size:40px;
+}
+
+/* CSS method */
+.ar-word {
+  display:inline-block;
+}
+.ar-letter {
+  position:relative;
+  display:inline-block;
+  margin-right:-9px;
+}
+
+.ar-letter .top {
+  position:absolute;
+  top:-19px;
+  font-size:1.2em;
+}
+
+.ar-letter .bottom {
+  position:absolute;
+  top:-3px;
+  font-size:1.2em;
+}
+
+/* Coloring rules */
+.tj.maddarid-lis-sukun, .tj.alef-khanjariya{
+  color: #ee8410;
+} 
+.tj.tafhym {
+  color:#0e46b2;
+}
+.tj.lam-shamsiya {
+  color:#7c7c7c;
+}
+
+.tj.rule:hover {
+  background-color:#cbcbcb;
+}
+
+.tj.for-test {
+  fill:red;
+}
+
+svg text:hover .tj, svg tspan:hover .tj {
+  opacity:0.3;
+}
