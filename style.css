@@ -65,6 +65,18 @@ body {
   fill:red;
 }
 
+.tj.rule_green {
+  fill:#1ba909
+}
+
+.tj.rule_blue {
+  fill:#104cbd
+}
+
+.tj.rule_orange {
+  fill:#fa8b1f
+}
+
 svg text:hover .tj, svg tspan:hover .tj {
   opacity:0.3;
 }
