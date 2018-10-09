@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>testfile</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'rustam_test';
+            src:
+            local('rustam_test'),
+            url(fonts/rustam_test.ttf) format('truetype');
+        }
+        .c1 {fill: red}
+        .c2 {fill: orange}
+        .c3 {fill: blue}
+        .c4 {fill: gray}
+        .c5 {fill: green}
+        .c6 {fill: magenta}
+    </style>
+</head>
+<body>
+    <h1>Just a header</h1>
+    <svg height="100" width="100" viewBox="0 0 100 100" font-size="50" style="font-family:rustam_test">
+        <text x="80" y="50" class="c1">ﺑ</text>
+        <text x="80" y="50" class="c2">&#1562;</text>
+        <text x="43" y="50" class="c3">ﺴ</text>
+        <text x="43" y="50" dx="20" dy="-15" class="c4">&#1618;</text>
+        <text x="13" y="50" class="c5">ﻢ</text>
+        <text x="13" y="50" dx="10" dy="5" class="c6">&#1562;</text>
+    </svg>
+</body>
+</html>
